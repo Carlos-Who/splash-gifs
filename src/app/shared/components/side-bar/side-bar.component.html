@@ -1,0 +1,22 @@
+
+<nav #refNavBar class="navbar">
+  <img src="/assets/images/splash-gif-logo.png" alt="">
+  <a  (click)="animate()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</nav>
+
+<aside #refSideBar class="side-bar-container">
+  <div class="side-bar">
+    <h1  class="_title">Historial</h1>
+
+    <ul>
+      <li *ngFor="let item of historial" class="btn-group">
+        <a  type="button" class="btn-history" (click)="buscar(item)">{{ item | titlecase}}</a>
+      </li>
+    </ul>
+
+  </div>
+</aside>
+
+
+
+

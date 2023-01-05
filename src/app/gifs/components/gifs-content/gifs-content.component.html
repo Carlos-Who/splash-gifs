@@ -1,0 +1,62 @@
+
+
+<div class="trending-container">
+  <h3 class="_title">Top 10 Gifs</h3>
+
+  <!-- Mobile -->
+  <swiper  [config]="configMobile" class="mySwiper-mob">
+    <ng-template swiperSlide *ngFor="let gif of trending">
+      <img [src]="gif.images.downsized_medium.url" class="trend-img" alt="">
+    </ng-template>
+  </swiper>
+
+  <!-- Tablet -->
+  <swiper  [config]="configTablet" class="mySwiper-tab">
+    <ng-template swiperSlide *ngFor="let gif of trending">
+      <img [src]="gif.images.downsized_medium.url" class="trend-img" alt="">
+    </ng-template>
+  </swiper>
+
+  <!-- Laptop (Small) -->
+  <swiper  [config]="configLaptopSmall" class="mySwiper-lap-s">
+    <ng-template swiperSlide *ngFor="let gif of trending">
+      <img [src]="gif.images.downsized_medium.url" class="trend-img" alt="">
+    </ng-template>
+  </swiper>
+
+  <!-- Laptop (Large) -->
+  <swiper  [config]="configLaptopLarge" class="mySwiper-lap-l">
+    <ng-template swiperSlide *ngFor="let gif of trending">
+      <img [src]="gif.images.downsized_medium.url" class="trend-img" alt="">
+    </ng-template>
+  </swiper>
+
+</div>
+
+
+
+
+<div class="gifs-container">
+
+  <h3 class="_title">Tus búsquedas</h3>
+
+  <div class="message-container">
+    <hr class="style-two">
+    <p class="home-message">Encuentra tus gifs favoritos en SplashGifs.</p>
+    <hr class="style-two">
+  </div>
+
+  <div class="gifs-content">
+    <ng-container class="gif-item" *ngFor="let gif of search">
+      <img [src]="gif.images.downsized_medium.url" class="search-img" alt="">
+    </ng-container>
+  </div>
+
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+  <div class="input-container">
+    <div class="search-container">
+      <!--  <form action="">-->
+      <input #inputText type="search" class="search-bar" (keyup.enter)="seaarchInput()" placeholder="Search gifs...">
+      <button type="button" class="search-btn" (click)="seaarchInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <!--  </form>-->
+
+    </div>
+
+    <!--    header+aside>ul>li*5>lorem5-->
+
+    <select class="select-container" #gifNumber>
+      <option value="12">12</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+    </select>
+  </div>

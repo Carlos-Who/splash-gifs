@@ -1,0 +1,21 @@
+
+@import "src/styles";
+
+
+.main-footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  margin-top: 33rem;
+  padding: 1em;
+  bottom: 0;
+  background-color: #1d1e1e;
+  border-top: 1px solid #353838;
+
+  p {
+    font-family: $title-fnt;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: #b2b6b7;
+  }
+}

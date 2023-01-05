@@ -1,0 +1,323 @@
+@import "~swiper/swiper.min.css";
+@import "~node_modules/swiper/swiper-bundle.min.css";
+@import "src/styles";
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 7rem 3vw;
+  margin-bottom: 55px;
+}
+
+._title {
+  font-family: $title-fnt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $title-clr;
+  margin-bottom: .5rem;
+}
+
+hr.style-two {
+  //margin: 1rem 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(121, 121, 121, 0.75), rgba(0, 0, 0, 0));
+}
+
+.mySwiper-mob {
+  width: 100%;
+  height: 13rem;
+}
+.mySwiper-tab {
+  width: 100%;
+  height: 13rem;
+  display: none;
+}
+.mySwiper-lap-s {
+  width: 100%;
+  height: 13rem;
+  display: none;
+}
+.mySwiper-lap-l {
+  width: 100%;
+  height: 13rem;
+  display: none;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #e10b9f;
+}
+
+.trend-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #383a3c;
+  border-radius: 10px;
+  background-color: teal;
+}
+
+
+// --- GIFS CONTENT --- //
+
+.gifs-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3vw;
+  margin-bottom: 130px;
+}
+
+.search-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #383a3c;
+  border-radius: 10px;
+  background-color: teal;
+}
+
+.gifs-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gif-item {
+
+}
+
+.isVisible {
+  visibility: hidden;
+}
+
+.message-container {
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(41, 51, 56, 0.75), rgba(0, 0, 0, 0));
+}
+
+.home-message {
+  padding: 1em;
+  text-align: center;
+  letter-spacing: .5px;
+  font-family: $title-fnt;
+  font-size: .9rem;
+  font-weight: 300;
+
+}
+
+
+
+// ---  Tablet  ---
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+
+  body {
+    //background-color: #7e4cab;
+  }
+  .gifs-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  ._title {
+    font-size: 1.5rem;
+  }
+  .trending-container {
+    margin: 7rem 4vw;
+    margin-bottom: 55px;
+  }
+
+  .mySwiper-mob {
+    display: none;
+  }
+  .mySwiper-tab {
+    height: 16rem;
+    display: block;
+  }
+
+  .gifs-container {
+    margin: 0 4vw;
+    margin-bottom: 8rem;
+  }
+
+  .search-img {
+    height: 280px;
+  }
+}
+
+// ---  Laptop (Small)  ---
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  body {
+    //background-color: #4c5cab;
+  }
+  ._title {
+    font-size: 1.7rem;
+  }
+  .trending-container {
+    margin: 7rem 4vw;
+    margin-bottom: 55px;
+  }
+  .mySwiper-mob {
+    display: none;
+  }
+  .mySwiper-tab {
+    display: none;
+  }
+  .mySwiper-lap-s{
+    height: 16rem;
+    display: block;
+  }
+  .gifs-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .gifs-container {
+    margin: 0 4vw;
+    margin-bottom: 130px;
+  }
+
+  .search-img {
+    height: 300px;
+  }
+}
+
+
+// ---  Laptop (Large)  ---
+
+@media only screen and (min-width: 1025px) and (max-width: 1210px) {
+
+  body {
+    //background-color: #4cab72;
+  }
+  ._title {
+    font-size: 1.7rem;
+  }
+  .trending-container {
+    margin: 7rem 5.5vw;
+    margin-bottom: 55px;
+  }
+  .gifs-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .mySwiper-mob {
+    display: none;
+  }
+  .mySwiper-tab {
+    display: none;
+  }
+  .mySwiper-lap-s {
+    display: none;
+  }
+  .mySwiper-lap-l {
+    height: 16rem;
+    display: block;
+  }
+  .gifs-container {
+    margin: 0 5.5vw;
+    margin-bottom: 130px;
+  }
+  .search-img {
+    height: 330px;
+  }
+}
+
+// ---  Laptop (Large)  ---
+
+@media only screen and (min-width: 1211px) and (max-width: 1440px) {
+
+  body {
+    //background-color: #707227;
+  }
+  ._title {
+    font-size: 1.7rem;
+  }
+  .trending-container {
+    margin: 7rem 7vw;
+    margin-bottom: 55px;
+  }
+  .gifs-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .mySwiper-mob {
+    display: none;
+  }
+  .mySwiper-tab {
+    display: none;
+  }
+  .mySwiper-lap-s {
+    display: none;
+  }
+  .mySwiper-lap-l {
+    height: 16rem;
+    display: block;
+  }
+  .gifs-container {
+    margin: 0 7vw;
+    margin-bottom: 130px;
+  }
+  .search-img {
+    height: 330px;
+  }
+
+}
+
+
+// ---  Laptop (ExtraLarge)  ---
+
+@media only screen and (min-width: 1441px) {
+
+  body {
+    //background-color: #8b5e49;
+  }
+  ._title {
+    font-size: 1.9rem;
+  }
+  .trending-container {
+    margin: 7rem 17vw;
+    margin-bottom: 55px;
+  }
+  .gifs-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .mySwiper-mob {
+    display: none;
+  }
+  .mySwiper-tab {
+    display: none;
+  }
+  .mySwiper-lap-s {
+    display: none;
+  }
+  .mySwiper-lap-l {
+    height: 22rem;
+    display: block;
+  }
+  .gifs-container {
+    margin: 0 17vw;
+    margin-bottom: 130px;
+  }
+  .search-img {
+    height: 400px;
+  }
+
+}
+

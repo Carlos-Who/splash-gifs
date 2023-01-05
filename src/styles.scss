@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+$title-fnt: 'Oxygen', sans-serif;
+$title-clr: #F2F2F2;
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #171a1a;
+  //height: 300vh;
+
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: slategrey;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #7e4cab;
+  border-radius: 10px;
+}
+
+//main {
+//  margin-left: 5rem;
+//}
+
+button {
+  //color: #252b2e;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

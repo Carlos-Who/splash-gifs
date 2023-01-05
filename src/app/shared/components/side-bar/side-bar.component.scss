@@ -1,0 +1,97 @@
+@import "src/styles";
+
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 1.5em;
+  border-bottom: 1px solid #303131;
+  z-index: 9;
+  background-color: #111415;
+
+  img {
+    width: 9rem;
+    height: auto;
+  }
+
+}
+
+.side-bar-container {
+  position: fixed;
+  z-index: 9;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  height: 100vh;
+  padding: 3em 1.5em;
+  justify-content: flex-start;
+  align-items: center;
+
+  z-index: 3;
+  background-color: #323A41;
+}
+
+._title {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.fa-bars {
+  color: #F9F9F9;
+  font-size: 2rem;
+}
+
+.btn-group {
+  margin: 2.3rem 0;
+}
+
+.btn-history {
+  background-color: #252a2c;
+  font-family: $title-fnt;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: .9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 1px solid #303235;
+}
+
+.btn-history:hover {
+  background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+  animation: slidernbw 3s linear infinite;
+  font-weight: 700;
+  color: #000;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
+
+// ---  Laptop (ExtraLarge)  ---
+
+@media only screen and (min-width: 1441px) {
+
+  body {
+    //background-color: #8b5e49;
+  }
+  .navbar {
+    img {
+      width: 11rem;
+      height: auto;
+    }
+  }
+
+}
