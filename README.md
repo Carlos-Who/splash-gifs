@@ -12,6 +12,11 @@ You can see a live demo here: [Demo](https://splashgifs.web.app/).
 \
 &nbsp;
 \
+## Setup
+1. Go to Giphy for developers website: https://developers.giphy.com/
+2. Create an account and generate your own API Key.
+3. Inside this project go to: `src > app > gifs > services > gifs-service.service.ts`.
+4. Paste your API Key on the variable `API_KEY`.
 &nbsp;
 \
 &nbsp;
